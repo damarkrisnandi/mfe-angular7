@@ -1,0 +1,15 @@
+{
+  "name": "mfe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve:home":"cd ./home-app && npm run serve:single-spa",
+    "serve:my-app":"cd ./my-app && npm run serve:single-spa",
+    "serve:child1":"cd ./child1 && npm run serve:single-spa",
+    "start": "cd ./simple-host && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
