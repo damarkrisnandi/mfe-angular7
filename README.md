@@ -11,6 +11,15 @@ Untuk bisa switch Node dengan mudah bisa menggunakan nvm package, nonton tutoria
 
 Kelengkapan library bisa dicek di masing-masing aplikasinya. jika ada error <i>module not found</i>, bisa install saja masing-masing librarynya. 
 
+Saya sendiri menggunakan **Node v.10** (untuk create angular app) dan **Node v.16** (untuk compile webpack / single-spa pada host app). Jika ingin belajar membuat single-spa dari awal, bisa menggunakan built-in ``create-single-spa`` dengan system **Node v.16**. Cara installnya seperti dibawah ini 
+```
+npm install -g create-single-spa
+``` 
+Selain itu dibutuhkan juga ``webpack-cli`` pada environment global. Install terlebih dahulu ``webpack-cli`` via **Node v.16** dengan
+```
+npm i -g webpack-cli
+``` 
+
 ## Cara compile
 1. Install dulu di masing-masing aplikasinya, termasuk di hostnya.
    
@@ -151,3 +160,6 @@ Kelengkapan library bisa dicek di masing-masing aplikasinya. jika ada error <i>m
 
 12. kembali ke root folder. Kembalilah ke Node versi 16 dan jalankan
     ``npm run start``. Aplikasi baru tadi dapat di jalankan di microfrontend single-spa
+
+## Cara build
+Coming soon...
