@@ -14,28 +14,40 @@ Kelengkapan library bisa dicek di masing-masing aplikasinya. jika ada error <i>m
 ## Cara compile
 1. Install dulu di masing-masing aplikasinya, termasuk di hostnya.
    
-   ```npm i``` 
+   ```
+   npm install
+   ``` 
 
    atau lebih mudah menggunakan command di root folder ini ``(mfe-angular)`` dengan:
 
-   ```npm run install:all```
+   ```
+   npm run install:all
+   ```
 
    kemudian tunggu beberapa saat agar library-library terinstall dengan sempurna.
 
 2. Compile terlebih dahulu part-part aplikasinya
 
-    ```npm run serve:home```
+    ```
+    npm run serve:home
+    ```
 
-    ```npm run serve:my-app```
+    ```
+    npm run serve:my-app
+    ```
 
-    ```npm run serve:child1```
+    ```
+    npm run serve:child1
+    ```
 
     pastikan masing-masing command tersebut dijalankan di terminal yang berbeda-beda
 
 
 3. Compile host microfrontendnya
 
-    ```npm run start```
+    ```
+    npm run start
+    ```
 
     Tunggu semua aplikasi tercompile dengan sempurna, kemudian buka `localhost:9000`
 
@@ -45,12 +57,16 @@ Kelengkapan library bisa dicek di masing-masing aplikasinya. jika ada error <i>m
 1. Switch terlebih dahulu ke Node versi 10 menggunakan nvm use
 2. buat aplikasi Angular 7 dengan command berikut:
 
-    ```ng new [nama-aplikasi] --routing --defaults --prefix [nama-aplikasi]```
+    ```
+    ng new [nama-aplikasi] --routing --defaults --prefix [nama-aplikasi]
+    ```
 
 3. Change directory ke ``[nama-aplikasi]``
 4. kemudian tambahkan library single-spa-angular v.3 dengan command berikut
 
-    ```ng add single-spa-angular@beta```
+    ```
+    ng add single-spa-angular@beta
+    ```
 
 5. Buka ``app.module.ts``, kemudian ubah sesuai dengan ini
     ```
@@ -112,11 +128,16 @@ Kelengkapan library bisa dicek di masing-masing aplikasinya. jika ada error <i>m
     ```
 
 9. Jalankan aplikasi ``child03`` dengan
-    ```npm run serve:child03```
+    
+    ```
+    npm run serve:child03
+    ```
 
 10. Buka folder simple host ``simple-host`` dan masuk ke file ``index.ejs``. Pada bagian ``imports`` yang ada di dalam tag ``<script type="systemjs-importmap">`` tambahkan aplikasi baru yang telah dibuat dan dijalankan tadi. 
 
-    ```"child03":"//localhost:4203/main.js"```
+    ```
+    "child03":"//localhost:4203/main.js"
+    ```
 
     Port ``4203`` ini disesuaikan dengan setting yang dilakukan di ``package.json`` di AngularApp pada step 7.
 
@@ -129,5 +150,5 @@ Kelengkapan library bisa dicek di masing-masing aplikasinya. jika ada error <i>m
 
     untuk ``route path="child03"`` ini ketika menjalankan host aplikasinya akan terbuka pada path ``localhost:9000/child03``. Agar bisa muncul di ``localhost:9000/``, maka dapat menggunakan path ``route default``.
 
-12. kembali ke root folder dan jalankan.
+12. kembali ke root folder. Kembalilah ke Node versi 16 dan jalankan
     ``npm run start``. Aplikasi baru tadi dapat di jalankan di microfrontend single-spa
