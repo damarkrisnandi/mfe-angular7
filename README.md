@@ -76,7 +76,6 @@ Kelengkapan library bisa dicek di masing-masing aplikasinya. jika ada error <i>m
         import { AppRoutingModule } from './app-routing.module';
         import { AppComponent } from './app.component';
         import { EmptyRouteComponent } from './empty-route/empty-route.component';
-        import { APP_BASE_HREF } from '@angular/common';
 
         @NgModule({
         declarations: [
