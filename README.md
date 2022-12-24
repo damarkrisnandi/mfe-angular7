@@ -7,12 +7,21 @@ Untuk aplikasinya gunakan angular versi 7.x.x, dengan single-spa-angular v.3 bet
 
 Untuk Core antar aplikasinya gunakan single-spa versi 5.x.x, dan dengan NodeJS versi 16, karena command webpack banyak berjalan di node versi 12 keatas. 
 
-Untuk bisa switch Node dengan mudah bisa menggunakan nvm package, nonton tutorialnya [disini](https://www.youtube.com/watch?v=WH0qowosEXw). Karena angularnya versi 7 yang kompatibel dengan NodeJS versi 10 dan single-spa 5 yang kompatibel dengan Node versi 12 keatas, sehingga cukup berguna ketika bisa switch versi Node dengan cepat
+Untuk bisa switch Node dengan mudah bisa menggunakan nvm package, nonton tutorialnya [disini](https://www.youtube.com/watch?v=WH0qowosEXw). Karena angularnya versi 7 yang kompatibel dengan NodeJS versi 10 dan single-spa 5 yang kompatibel dengan Node versi 12 keatas, sehingga cukup berguna ketika bisa switch versi Node dengan cepat.
+
+Kelengkapan library bisa dicek di masing-masing aplikasinya. jika ada error <i>module not found</i>, bisa install saja masing-masing librarynya. 
 
 ## Cara compile
 1. Install dulu di masing-masing aplikasinya, termasuk di hostnya.
    
    ```npm i``` 
+
+   atau lebih mudah menggunakan command di root folder ini ``(mfe-angular)`` dengan:
+
+   ```npm run install:all```
+
+   kemudian tunggu beberapa saat agar library-library terinstall dengan sempurna.
+
 2. Compile terlebih dahulu part-part aplikasinya
 
     ```npm run serve:home```
@@ -29,3 +38,5 @@ Untuk bisa switch Node dengan mudah bisa menggunakan nvm package, nonton tutoria
     ```npm run start```
 
 Tunggu semua aplikasi tercompile dengan sempurna, kemudian buka `localhost:9000`
+
+![hasil compile](/screenshoot/first-single-spa-app.png "Ini hasil compile")
