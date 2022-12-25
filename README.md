@@ -163,3 +163,8 @@ npm i -g webpack-cli
 
 ## Cara build
 Coming soon...
+
+## What's Next?
+1. Build Configuration
+2. Sharing App (apakah component dan service yang ada di aplikasi yang berbeda bisa digunakan juga?)
+3. 
