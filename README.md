@@ -167,4 +167,4 @@ Coming soon...
 ## What's Next?
 1. Build Configuration
 2. Sharing App (apakah component dan service yang ada di aplikasi yang berbeda bisa digunakan juga?)
-3. 
+3. Build optimization (apakah bisa dioptimize lagi?)
