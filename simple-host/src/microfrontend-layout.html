@@ -18,9 +18,15 @@
   -->
 
   <main>
+    <nav>
+      <application name="nav"></application>
+    </nav>
     <route default>
       <!-- <application name="@single-spa/welcome"></application> -->
-      <application name="home"></application>
+      <div style="margin:20px">
+        <application name="home"></application>
+      </div>
+      
     </route>
     <route path="my-app">
       <application name="my-app"></application>

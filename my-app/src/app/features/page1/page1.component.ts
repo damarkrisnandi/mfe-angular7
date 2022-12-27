@@ -10,6 +10,7 @@ export class Page1Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('masuk page 1')
   }
 
 }

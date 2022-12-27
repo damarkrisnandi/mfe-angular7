@@ -50,7 +50,8 @@
       "imports": {
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@damarkrisnandi/root-config": "//localhost:9000/damarkrisnandi-root-config.js",
-        "home": "https://home-app.dmr.netlify.app/main.js",
+        "nav": "//localhost:4204/main.js",
+        "home": "//localhost:4200/main.js",
         "my-app": "//localhost:4201/main.js",
         "child1": "//localhost:4202/main.js"
       }
@@ -74,13 +75,12 @@
   <% } %>
 
 </head>
-<body>
+<body style="margin:0">
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
   <script>
     System.import('@damarkrisnandi/root-config');
-    System.import('https://home-app.dmr.netlify.app/main.js').catch(function (err) { console.error(err); });
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>

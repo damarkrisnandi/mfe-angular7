@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install:nav":"cd ./nav-app && npm i",
     "install:home":"cd ./home-app && npm i",
     "install:my-app":"cd ./my-app && npm i",
     "install:child1":"cd ./child1 && npm i",
     "install:host":"cd ./child1 && npm i",
     "install:all":"npm run install:home && npm run install:my-app && npm run install:child1 && npm run install:host",
+    "serve:nav":"cd ./nav-app && npm run serve:single-spa",
     "serve:home":"cd ./home-app && npm run serve:single-spa",
     "serve:my-app":"cd ./my-app && npm run serve:single-spa",
     "serve:child1":"cd ./child1 && npm run serve:single-spa",

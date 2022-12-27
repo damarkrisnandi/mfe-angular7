@@ -1,0 +1,5 @@
+<div class="topnav">
+  <a [class]="location === '/' ? 'active' : ''" href="/">Home</a>
+  <a [class]="location.startsWith('/my-app') ? 'active' : ''" href="/my-app">My-app</a>
+  <a [class]="location.startsWith('/child1') ? 'active' : ''" href="/child1">Child1</a>
+</div>
