@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
 import { Page1Component } from './features/page1/page1.component';
 import { MainPageComponent } from './features/main-page/main-page.component';
+import { LazyPageComponent } from './features/lazy-page/lazy-page.component';
 
 @NgModule({
   declarations: [

@@ -15,6 +15,11 @@ const routes: Routes = [
     component: Page1Component
   },
   {
+    path: 'my-app/lazy-page',
+    loadChildren: './features/lazy-page/lazy-page.module#LazyPageModule',
+    data: { pageTitle: 'Lazy Page' },
+  },
+  {
   path: '**',
   component: EmptyRouteComponent
 }

@@ -23,4 +23,8 @@ export class MainPageComponent implements OnInit {
     location.pathname = '/';
   }
 
+  toLazyPage(evt) {
+    this.router.navigateByUrl('/my-app/lazy-page')
+  }
+
 }
