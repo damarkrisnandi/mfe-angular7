@@ -36,7 +36,9 @@ npm i -g webpack-cli
    kemudian tunggu beberapa saat agar library-library terinstall dengan sempurna.
 
 2. Compile terlebih dahulu part-part aplikasinya
-
+    ```
+    npm run serve:nav
+    ```
     ```
     npm run serve:home
     ```
