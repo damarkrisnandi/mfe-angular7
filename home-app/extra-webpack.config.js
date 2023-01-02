@@ -2,6 +2,7 @@ const singleSpaAngularWebpack = require('single-spa-angular/lib/webpack').defaul
 
 module.exports = (angularWebpackConfig, options) => {
   angularWebpackConfig.devServer = {
+    https: true,
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
