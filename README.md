@@ -204,7 +204,7 @@ npm run build:webpack
 
 ## What's Next?
 - [x] Build Configuration
-- [] Sharing App (apakah component dan service yang ada di aplikasi yang berbeda bisa digunakan juga?)
-- [] Build optimization (apakah bisa dioptimize lagi?)
+- [ ] Sharing App (apakah component dan service yang ada di aplikasi yang berbeda bisa digunakan juga?)
+- [ ] Build optimization (apakah bisa dioptimize lagi?)
 - [x] handling CORS (masih problem)
-- [] Custom URL yg diencrypt (masih problem juga)
+- [ ] Custom URL yg diencrypt (masih problem juga)
