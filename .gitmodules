@@ -1,0 +1,15 @@
+[submodule "mfea7v2-root-app"]
+	path = mfea7v2-root-app
+	url = https://github.com/damarkrisnandi/mfea7v2-root-app
+[submodule "mfea7v2-microapp-nav"]
+	path = mfea7v2-microapp-nav
+	url = https://github.com/damarkrisnandi/mfea7v2-microapp-nav
+[submodule "mfea7v2-microapp-home"]
+	path = mfea7v2-microapp-home
+	url = https://github.com/damarkrisnandi/mfea7v2-microapp-home
+[submodule "mfea7v2-microapp-myapp"]
+	path = mfea7v2-microapp-myapp
+	url = https://github.com/damarkrisnandi/mfea7v2-microapp-myapp
+[submodule "mfea7v2-microapp-child1"]
+	path = mfea7v2-microapp-child1
+	url = https://github.com/damarkrisnandi/mfea7v2-microapp-child1
