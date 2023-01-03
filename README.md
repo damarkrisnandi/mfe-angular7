@@ -143,8 +143,17 @@ npm i -g webpack-cli
     npm run serve:child03
     ```
 
-10. Buka folder simple host ``simple-host`` dan masuk ke file ``index.ejs``. Pada bagian ``imports`` yang ada di dalam tag ``<script type="systemjs-importmap">`` tambahkan aplikasi baru yang telah dibuat dan dijalankan tadi. 
+10. 
+    (versi sebelumnya) Buka folder simple host ``simple-host`` dan masuk ke file ``index.ejs``. Pada bagian ``imports`` yang ada di dalam tag ``<script type="systemjs-importmap">`` tambahkan aplikasi baru yang telah dibuat dan dijalankan tadi. 
 
+    ```
+    "child03":"//localhost:4203/main.js"
+    ```
+
+    Port ``4203`` ini disesuaikan dengan setting yang dilakukan di ``package.json`` di AngularApp pada step 7.
+    
+    **(versi terbaru - gunakan step ini)** buka folder ``public/assets``, kemudian buka file ``import-map-local.json``, tambahkan aplikasi yang telah dibuat dan dijalankan tadi.
+    
     ```
     "child03":"//localhost:4203/main.js"
     ```
@@ -194,8 +203,8 @@ npm run build:webpack
 ```
 
 ## What's Next?
-1. Build Configuration
-2. Sharing App (apakah component dan service yang ada di aplikasi yang berbeda bisa digunakan juga?)
-3. Build optimization (apakah bisa dioptimize lagi?)
-4. handling CORS (masih problem)
-5. Custom URL yg diencrypt (masih problem juga)
+1. [x] Build Configuration
+2. [] Sharing App (apakah component dan service yang ada di aplikasi yang berbeda bisa digunakan juga?)
+3. [] Build optimization (apakah bisa dioptimize lagi?)
+4. [x] handling CORS (masih problem)
+5. [] Custom URL yg diencrypt (masih problem juga)
