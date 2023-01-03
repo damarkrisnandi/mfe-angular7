@@ -164,7 +164,34 @@ npm i -g webpack-cli
     ``npm run start``. Aplikasi baru tadi dapat di jalankan di microfrontend single-spa
 
 ## Cara build
-Coming soon...
+Demi keperluan build, repo ini dipecah menjadi beberapa repo yaitu:
+1. [mfea7v2-root-app](https://github.com/damarkrisnandi/mfea7v2-root-app) sebagai host / root configuration
+2. [mfea7v2-microapp-nav](https://github.com/damarkrisnandi/mfea7v2-microapp-nav) sebagai microapp navigation
+3. [mfea7v2-microapp-home](https://github.com/damarkrisnandi/mfea7v2-microapp-home) sebagai microapp home app
+4. [mfea7v2-microapp-myapp](https://github.com/damarkrisnandi/mfea7v2-microapp-myapp) sebagai microapp my-app
+5. [mfea7v2-microapp-child1](https://github.com/damarkrisnandi/mfea7v2-microapp-child1) sebagai microapp child1
+
+Juga hasil build yang berhasil bisa dilihat di sini -> [Demo](https://mfea7v2-root-app.vercel.app/)
+
+Cara buildnya sebetulnya cukup mudah, namun sedikit tricky terutama di microappnya karena ada kondisi bahwa app membutuhkan module-module atau script yg hanya ada di dalam microapp.
+
+Untuk masing-masing microappnya dibuild dengan cara di bawah ini
+
+```
+> node ./node_modules/@angular/cli/bin/ng build --prod --output-hashing none"
+```
+
+script diatas digunakan jika buildnya di local, untuk build di hosting / container gunakan script ini
+
+```
+> node ./node_modules/@angular/cli/bin/ng build --prod --output-hashing none --deploy-url "[link-url-microapp]"
+```
+
+Untuk root config dibuild dengan cara di bawah ini
+
+```
+npm run build:webpack
+```
 
 ## What's Next?
 1. Build Configuration

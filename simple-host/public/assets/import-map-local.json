@@ -1,0 +1,16 @@
+{
+    "imports": {
+      "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+      "@damarkrisnandi/root-config": "//localhost:9000/damarkrisnandi-root-config.js",
+      "nav": "//localhost:4204/main.js",
+      "home": "//localhost:4200/main.js",
+      "my-app": "//localhost:4201/main.js",
+      "child1": "//localhost:4202/main.js",
+
+
+      "@prod/home": "https://mfea7v2-microapp-home.vercel.app/main.js",
+      "@prod/nav" : "https://mfea7v2-microapp-nav.vercel.app/main.js",
+      "@prod/my-app": "https://mfea7v2-microapp-myapp.vercel.app/main.js",
+      "@prod/child1": "https://mfea7v2-microapp-child1.vercel.app/main.js"
+    }
+  }

@@ -1,0 +1,10 @@
+{
+    "imports": {
+      "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+      "@damarkrisnandi/root-config": "https://mfea7v2-root-app.vercel.app/damarkrisnandi-root-config.js",
+      "home": "https://mfea7v2-microapp-home.vercel.app/main.js",
+      "nav" : "https://mfea7v2-microapp-nav.vercel.app/main.js",
+      "my-app": "https://mfea7v2-microapp-myapp.vercel.app/main.js",
+      "child1": "https://mfea7v2-microapp-child1.vercel.app/main.js"
+    }
+}

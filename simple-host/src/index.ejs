@@ -31,16 +31,7 @@
 
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
-  <script type="systemjs-importmap">
-    {
-      "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
-        
-        "@damarkrisnandi/root-config": "https://mfea7-host.vercel.app/damarkrisnandi-root-config.js",
-        "@prod/home": "https://mfea7-microapp-home.vercel.app/main.js",
-        "@prod/nav" : "https://mfea7-microapp-nav.vercel.app/main.js"
-      }
-    }
+  <script type="systemjs-importmap" src="assets/import-map.json">
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
   <!-- <script src="https://cdn.jsdelivr.net/npm/zone.js@0.10.3/dist/zone.min.js"></script> -->
@@ -49,22 +40,8 @@
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
   <% if (isLocal) { %>
-  <script type="systemjs-importmap">
-    {
-      "imports": {
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-        "@damarkrisnandi/root-config": "//localhost:9000/damarkrisnandi-root-config.js",
-        "nav": "//localhost:4204/main.js",
-        "home": "//localhost:4200/main.js",
-        "my-app": "//localhost:4201/main.js",
-        "child1": "//localhost:4202/main.js",
-
-
-        "@prod/home": "https://mfea7-microapp-home.vercel.app/main.js",
-        "@prod/nav" : "https://mfea7-microapp-nav.vercel.app/main.js"
-      }
-    }
-  </script>
+    <script type="systemjs-importmap" src="assets/import-map-local.json">
+    </script>
   <% } %>
 
   <!--
